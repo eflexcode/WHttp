@@ -1,0 +1,24 @@
+POST /api/upload?file=test.txt&debug=true HTTP/1.1
+Host: example.com:80
+User-Agent: CustomClient/1.0
+Accept: text/plain, application/json;q=0.9, */*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Cache-Control: no-cache
+Pragma: no-cache
+Referer: http://example.com/home
+Origin: http://example.com
+Authorization: Bearer abc123token
+Cookie: sessionId=xyz789; theme=dark
+Content-Type: application/json
+Content-Length: 48
+If-Modified-Since: Wed, 18 Feb 2026 12:00:00 GMT
+If-None-Match: "etag12345"
+X-Requested-With: XMLHttpRequest
+X-Custom-Header: SomeValue
+
+{
+  "username": "john",
+  "fileName": "test.txt"
+}

@@ -1,0 +1,15 @@
+POST HTTP/1.1
+Host: example.com:80
+User-Agent: CustomClient/1.0
+Accept: text/plain, application/json;q=0.9, */*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://example.com/home
+Origin: http://example.com
+Content-Type: application/json
+Content-Length: 48
+
+{
+  "username": "john",
+  "fileName": "test.txt"
+}
